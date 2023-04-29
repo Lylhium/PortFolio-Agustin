@@ -1,3 +1,13 @@
+:root {
+  --dark-mode-bg-color: #202020;
+  --light-mode-bg-color: white;
+}
+
+.dark-mode {
+  --bg-color: #333333; /* dark mode background color */
+  --text-color: #ffffff; /* dark mode text color */
+}
+
 body {
   margin: 0;
   padding: 0;

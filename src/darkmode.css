@@ -1,0 +1,25 @@
+:root {
+  --bg-color: #fdfdfd; /* light mode background color */
+  --transition-duration: 0.5s;
+  --text-color: #202020; /* light mode text color */
+}
+
+.dark-mode {
+  --bg-color: #202020; /* dark mode background color */
+  --text-color: #ffffff; /* dark mode text color */
+}
+
+.switch-container {
+  position: sticky;
+  position: -webkit-sticky; /* Agrega esta propiedad para compatibilidad con navegadores antiguos */
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 15px;
+  background-color: var(--light-mode-bg-color);
+  transition: background-color var(--transition-duration);
+}
+
+.switch-container.dark-mode {
+  background-color: var(--dark-mode-bg-color);
+}

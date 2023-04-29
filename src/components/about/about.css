@@ -2,7 +2,6 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #202020;
 }
 
 .a-left {
@@ -57,13 +56,10 @@ h1 {
 .a-sub {
   margin: 20px 0px;
   font-weight: bold;
-  color: white;
 }
 
 .a-desc {
   font-weight: 300;
-
-  color: white;
 }
 
 @media screen and (max-width: 480px) {

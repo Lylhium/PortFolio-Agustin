@@ -1,6 +1,5 @@
 .c {
   position: relative;
-  background-color: #202020;
 }
 
 .c-wrapper {
@@ -30,7 +29,6 @@
   margin: 50px 0px;
   font-weight: 300;
   width: 70%;
-  color: white;
 }
 .c-icon {
   width: 30px;
@@ -40,7 +38,6 @@
 
 .c-desc {
   font-weight: 200;
-  color: white;
 }
 .c-texto {
   text-align: center;
@@ -74,7 +71,6 @@ textarea {
   border: none;
   padding: 15px;
   background-color: #61ac78;
-  color: white;
   border: 0.1em solid #61ac78;
   font-weight: 100;
   cursor: pointer;

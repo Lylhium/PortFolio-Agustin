@@ -63,7 +63,6 @@ const Contact = () => {
                 href={
                   "https://www.linkedin.com/in/agust%C3%ADn-pfarherr-623188211/"
                 }
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -74,7 +73,6 @@ const Contact = () => {
               <img src={Github} className="c-icon" alt="img" />
               <a
                 href={"https://github.com/Lylhium?tab=repositories"}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -85,7 +83,6 @@ const Contact = () => {
               <img src={Address} className="c-icon" alt="img" />
               <a
                 href={"https://goo.gl/maps/2Hs3EV9E2NQaFARk6"}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noreferrer"
               >

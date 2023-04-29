@@ -37,7 +37,7 @@ const about = () => {
 
         <a
           href={"https://angry-mestorf-fbb8cc.netlify.app/"}
-          style={{ color: "white", fontWeight: 500, fontSize: 25 }}
+          style={{ fontWeight: 500, fontSize: 25 }}
         >
           Coco Light
         </a>

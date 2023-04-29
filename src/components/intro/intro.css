@@ -1,7 +1,6 @@
 .i {
   display: flex;
   height: 75vh;
-  background-color: #202020;
 }
 .pad {
   padding-top: 10px;
@@ -23,11 +22,9 @@
 }
 .i-intro {
   font-size: 20px;
-  color: white;
 }
 .i-name {
   font-size: 50px;
-  color: white;
   padding-bottom: 15px;
 }
 .i-title {
@@ -83,7 +80,6 @@
 }
 .i-desc {
   padding-top: 15px;
-  color: white;
   font-weight: 500;
 }
 
