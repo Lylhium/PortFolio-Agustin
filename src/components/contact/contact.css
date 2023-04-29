@@ -1,0 +1,144 @@
+.c {
+  position: relative;
+  background-color: #202020;
+}
+
+.c-wrapper {
+  padding: 50px;
+  display: flex;
+}
+.c-left {
+  flex: 1;
+}
+
+.c-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c-title {
+  font-size: 60px;
+  width: 80%;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+  color: white;
+}
+.c-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.c-desc {
+  font-weight: 200;
+  color: white;
+}
+.c-texto {
+  text-align: center;
+}
+form {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+.btn-send {
+  border: none;
+  padding: 15px;
+  background-color: #61ac78;
+  color: white;
+  border: 0.1em solid #61ac78;
+  font-weight: 100;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.btn-send:hover {
+  background-color: white;
+  border: 0.1em solid #61ac78;
+  color: #61ac78;
+}
+.c-contact {
+  background-image: linear-gradient(#74e295, #74e295);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.layer1 {
+  background-image: url("../../assets/Waves.svg");
+}
+
+@media screen and (max-width: 480px) {
+  .c {
+    padding-top: 20px;
+  }
+  .c-wrapper {
+    flex-direction: column;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  form {
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 35%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+}
