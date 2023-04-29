@@ -29,10 +29,10 @@ const about = () => {
           other coding languages.
         </p>
         <p className="a-desc">
-          Some of my other hobbies are drawing, play with my cat and take
+          Some of my other hobbies are drawing, playing with my cat and taking
           pictures.
         </p>
-        <h1>My Proyects</h1>
+        <h1>My Projects</h1>
         <img src={Logo} className="coco-icon" alt="img" />
 
         <a

@@ -25,7 +25,8 @@ export default function intro() {
             learning Back-end.
           </div>
           <div className="i-desc">
-            Willing to offer my services and expand my knowledge about Coding.
+            I'm willing to offer my services and expand my knowledge about
+            coding.
           </div>
         </div>
       </div>
