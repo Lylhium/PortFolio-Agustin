@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PortFolio-Agustin/static/css/main.9b27ba49.css",
+    "main.css": "/PortFolio-Agustin/static/css/main.85b4df0e.css",
     "main.js": "/PortFolio-Agustin/static/js/main.63628eb6.js",
     "static/js/787.5afd0f6b.chunk.js": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js",
     "static/media/pulg.jpg": "/PortFolio-Agustin/static/media/pulg.993889875628ce0a267a.jpg",
@@ -12,12 +12,12 @@
     "static/media/Logo.png": "/PortFolio-Agustin/static/media/Logo.0d426996a2b70d8111f9.png",
     "static/media/Waves.svg": "/PortFolio-Agustin/static/media/Waves.de5881dcff8ea60690e0.svg",
     "index.html": "/PortFolio-Agustin/index.html",
-    "main.9b27ba49.css.map": "/PortFolio-Agustin/static/css/main.9b27ba49.css.map",
+    "main.85b4df0e.css.map": "/PortFolio-Agustin/static/css/main.85b4df0e.css.map",
     "main.63628eb6.js.map": "/PortFolio-Agustin/static/js/main.63628eb6.js.map",
     "787.5afd0f6b.chunk.js.map": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b27ba49.css",
+    "static/css/main.85b4df0e.css",
     "static/js/main.63628eb6.js"
   ]
 }
