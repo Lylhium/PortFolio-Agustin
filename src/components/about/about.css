@@ -64,7 +64,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
   .a-card {
-    height: 35vh;
+    height: 31vh;
   }
   .a-card.bg {
     display: none;
