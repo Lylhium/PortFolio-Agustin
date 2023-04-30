@@ -113,7 +113,7 @@ const Contact = () => {
             <div className="c-info-item">
               <img src={Github} className="c-icon" alt="img" />
               <a
-                href={"https://github.com/Lylhium?tab=repositories"}
+                href={"https://github.com/Lylhium"}
                 className="button"
                 target="_blank"
                 rel="noreferrer"

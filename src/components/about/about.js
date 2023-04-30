@@ -21,7 +21,7 @@ const about = () => {
           I'm a Front-end Developer from Argentina, Buenos aires
         </p>
         <p className="a-desc">
-          I'm very passionated about creating interactive applications and
+          I'm very passionate about creating interactive applications and
           different user experiences.
         </p>
         <p className="a-desc">
@@ -37,13 +37,13 @@ const about = () => {
         <a
           className="button1"
           href={"https://angry-mestorf-fbb8cc.netlify.app/"}
+          target="_blank"
+          rel="noreferrer"
           style={{ fontWeight: 500, fontSize: 25 }}
         >
           <img src={Logo} className="coco-icon" alt="img" />
           Coco Light
         </a>
-        <br />
-
         <br />
       </div>
     </div>
