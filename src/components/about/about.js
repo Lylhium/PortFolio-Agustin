@@ -33,12 +33,13 @@ const about = () => {
           pictures.
         </p>
         <h1>My Projects</h1>
-        <img src={Logo} className="coco-icon" alt="img" />
 
         <a
+          className="button1"
           href={"https://angry-mestorf-fbb8cc.netlify.app/"}
           style={{ fontWeight: 500, fontSize: 25 }}
         >
+          <img src={Logo} className="coco-icon" alt="img" />
           Coco Light
         </a>
         <br />

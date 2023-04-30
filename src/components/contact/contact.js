@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 //css
 import "../contact/contact.css";
 //img
@@ -13,34 +13,74 @@ import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
 const Contact = () => {
-  const formRef = useRef();
+  const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [email, setEmail] = useState("");
 
-  const [done, setDone] = useState(false);
-
-  const mostrarAlerta = () => {
-    Swal.fire("Mail sent successfully.", "Thank you!", "success");
-  };
-
-  const handleSubmit = (e) => {
+  function sendEmail(e) {
     e.preventDefault();
+
+    if (
+      !e.target.message.value ||
+      !e.target.name.value ||
+      !e.target.subject.value ||
+      !e.target.email.value
+    ) {
+      setError("Please complete all fields.");
+      return;
+    }
 
     emailjs
       .sendForm(
-        "service_lilius",
-        "template_m6lspvj",
-        formRef.current,
-        "user_v8lv7h9xUJr6n9XlGDeii"
+        "service_z2gylhq",
+        "template_Lilius",
+        e.target,
+        "QXiJ-cPyQSWR84xkF"
       )
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true);
+          Swal.fire({
+            icon: "success",
+            title: "Mail sent successfully.",
+            text: "Thank you!",
+            iconColor: "#74e295", // para cambiar el color del icono
+            confirmButtonColor: "#74e295",
+            customClass: {
+              icon: "my-custom-icon-class",
+              confirmButton: "my-custom-button-class",
+            },
+          });
+          setMessage("");
+          setName("");
+          setSubject("");
+          setEmail("");
         },
         (error) => {
           console.log(error.text);
         }
       );
-  };
+  }
+  function handleInputChange(event) {
+    switch (event.target.name) {
+      case "message":
+        setMessage(event.target.value);
+        break;
+      case "name":
+        setName(event.target.value);
+        break;
+      case "subject":
+        setSubject(event.target.value);
+        break;
+      case "email":
+        setEmail(event.target.value);
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <div className="c">
@@ -63,6 +103,7 @@ const Contact = () => {
                 href={
                   "https://www.linkedin.com/in/agust%C3%ADn-pfarherr-623188211/"
                 }
+                className="button"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -73,6 +114,7 @@ const Contact = () => {
               <img src={Github} className="c-icon" alt="img" />
               <a
                 href={"https://github.com/Lylhium?tab=repositories"}
+                className="button"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -83,10 +125,12 @@ const Contact = () => {
               <img src={Address} className="c-icon" alt="img" />
               <a
                 href={"https://goo.gl/maps/2Hs3EV9E2NQaFARk6"}
+                className="button"
                 target="_blank"
                 rel="noreferrer"
+                color="white"
               >
-                La Paternal, Capital Federal , Argentina
+                Villa Crespo, Capital Federal , Argentina
               </a>
             </div>
           </div>
@@ -96,16 +140,42 @@ const Contact = () => {
             <h2 className="c-contact">Do you need to contact me?</h2>
             <p className="c-texto">send me an email here!</p>
           </p>
+          <form onSubmit={sendEmail}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={name}
+              onChange={handleInputChange}
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value={subject}
+              onChange={handleInputChange}
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleInputChange}
+            />
+            <br></br>
+            <textarea
+              className="textarea-style"
+              name="message"
+              rows={4}
+              value={message}
+              placeholder="Message"
+              onChange={handleInputChange}
+            />
 
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_tema" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="4" placeholder="Message" name="message" />
-            <button className="btn-send" onClick={() => mostrarAlerta()}>
+            {error && <div style={{ color: "red" }}>{error}</div>}
+            <button className="btn-send" type="submit">
               Send
             </button>
-            {done && <h2 className="c-contact">Mail Sent.</h2>}
           </form>
         </div>
       </div>

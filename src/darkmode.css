@@ -2,11 +2,20 @@
   --bg-color: #fdfdfd; /* light mode background color */
   --transition-duration: 0.5s;
   --text-color: #202020; /* light mode text color */
+  --link-color-light: #202020;
+  --link-color-dark: white;
 }
 
 .dark-mode {
   --bg-color: #202020; /* dark mode background color */
   --text-color: #ffffff; /* dark mode text color */
+}
+.light {
+  color: var(--link-color-light);
+}
+
+.dark {
+  color: var(--link-color-dark);
 }
 
 .switch-container {
