@@ -11,8 +11,13 @@ import Github from "../../assets/github.png";
 import emailjs from "emailjs-com";
 //sweetalert
 import Swal from "sweetalert2";
+//translate
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
+
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
@@ -28,7 +33,7 @@ const Contact = () => {
       !e.target.subject.value ||
       !e.target.email.value
     ) {
-      setError("Please complete all fields.");
+      setError(t("inputError"));
       return;
     }
 
@@ -87,7 +92,7 @@ const Contact = () => {
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Contact me</h1>
+          <h1 className="c-title">{t("contact")}</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} className="c-icon" alt="img" />
@@ -124,7 +129,7 @@ const Contact = () => {
             <div className="c-info-item">
               <img src={Address} className="c-icon" alt="img" />
               <a
-                href={"https://goo.gl/maps/2Hs3EV9E2NQaFARk6"}
+                href={"https://goo.gl/maps/vcbZic1LcaeCpi9y8"}
                 className="button"
                 target="_blank"
                 rel="noreferrer"
@@ -137,8 +142,8 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <h2 className="c-contact">Do you need to contact me?</h2>
-            <p className="c-texto">send me an email here!</p>
+            <h2 className="c-contact">{t("contact1")}</h2>
+            <p className="c-texto">{t("contact2")}</p>
           </p>
           <form onSubmit={sendEmail}>
             <input
@@ -174,7 +179,7 @@ const Contact = () => {
 
             {error && <div style={{ color: "red" }}>{error}</div>}
             <button className="btn-send" type="submit">
-              Send
+              {t("btnSend")}
             </button>
           </form>
         </div>

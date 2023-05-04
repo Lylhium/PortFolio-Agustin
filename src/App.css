@@ -22,3 +22,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Estilos para el botón */
+.dropbtn {
+  background-color: #74e295;
+  color: #202020;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.dropbtn.dropdown:hover {
+  background-color: rgb(43, 43, 43);
+  border: 0.1em solid #74e295;
+  color: #74e295;
+}
+
+.dropdwn {
+  display: inline;
+  position: fixed;
+  top: 0 !important;
+  right: 0 !important;
+  padding: 15px;
+}
+
+/* Estilos para el contenedor del dropdown */
+.dropdown {
+  display: inline-block;
+  transition: all 0.5s;
+}
+
+/* Estilos para el contenido del dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+/* Estilos para los enlaces dentro del contenido del dropdown */
+.dropdown-content button {
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: #74e295;
+  border: 0.1em solid #74e295;
+  font-weight: 200;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+/* Estilos para los enlaces al pasar el mouse sobre ellos */
+.dropdown-content button:hover {
+  background-color: rgb(43, 43, 43);
+  border: 0.1em solid #74e295;
+  color: #74e295;
+}
+
+/* Mostrar el contenido del dropdown cuando se pasa el mouse sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.5s;
+}
+
+/* Cambiar el estilo del botón cuando se pasa el mouse sobre él */
+.dropdown:hover .dropbtn {
+  background-color: rgb(43, 43, 43);
+  border: #74e295;
+  color: #74e295;
+}
+
+@media screen and (max-width: 480px) {
+  .dropdwn {
+    display: inline;
+    position: fixed;
+    top: 0 !important;
+    right: 0 !important;
+    padding: 4px;
+  }
+}

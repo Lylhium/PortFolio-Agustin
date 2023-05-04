@@ -3,13 +3,18 @@ import React from "react";
 import "./intro.css";
 //imgs
 import Me from "../../../src/assets/yo2023.jpg";
+//translate
+import { useTranslation } from "react-i18next";
 
 export default function intro() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
+
   return (
     <div className="i">
       <div className="i-left">
         <div className="i-left-wrapper">
-          <div className="i-intro">Hello There, I'm</div>
+          <div className="i-intro">{t("hello")}</div>
           <div className="i-name">Agustín Pfarherr</div>
           <div className="i-title">
             <div className="i-title-wrapper">
@@ -20,14 +25,8 @@ export default function intro() {
               <div className="i-title-item">HTML & CSS</div>
             </div>
           </div>
-          <div className="i-desc">
-            I am a Junior Front-end Developer and I'm currently studying and
-            learning Back-end.
-          </div>
-          <div className="i-desc">
-            I'm willing to offer my services and expand my knowledge about
-            coding.
-          </div>
+          <div className="i-desc">{t("intro1")}</div>
+          <div className="i-desc">{t("intro2")}</div>
         </div>
       </div>
       <div className="i-right">

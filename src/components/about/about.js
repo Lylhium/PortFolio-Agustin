@@ -4,8 +4,13 @@ import "../about/about.css";
 //img
 import me2 from "../../../src/assets/pulg.jpg";
 import Logo from "../../assets/Logo.png";
+//translate
+import { useTranslation } from "react-i18next";
 
 const about = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
+
   return (
     <div className="a">
       <div className="a-left">
@@ -15,24 +20,13 @@ const about = () => {
         </div>
       </div>
       <div className="a-right">
-        <h1>About me</h1>
+        <h1>{t("aboutMe")}</h1>
 
-        <p className="a-desc">
-          I'm a Front-end Developer from Argentina, Buenos aires
-        </p>
-        <p className="a-desc">
-          I'm very passionate about creating interactive applications and
-          different user experiences.
-        </p>
-        <p className="a-desc">
-          As a developer, I am excited to learn and expand on front-end and
-          other coding languages.
-        </p>
-        <p className="a-desc">
-          Some of my other hobbies are drawing, playing with my cat and taking
-          pictures.
-        </p>
-        <h1>My Projects</h1>
+        <p className="a-desc">{t("about1")}</p>
+        <p className="a-desc">{t("about2")}</p>
+        <p className="a-desc">{t("about3")}</p>
+        <p className="a-desc">{t("about4")}</p>
+        <h1>{t("project")}</h1>
 
         <a
           className="button1"

@@ -1,13 +1,15 @@
+//react
 import { useState, useEffect } from "react";
 import Switch from "react-switch";
 //css
 import "../src/App.css";
 import "./darkmode.css";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 //components
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Intro from "./components/intro/intro";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import DropDown from "./components/DropDown/dropDown";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -35,11 +37,16 @@ function App() {
             onColor="#74e295"
             offColor="#555555;"
           />
+          <div className="dropdwn">
+            <DropDown />
+          </div>
         </div>
+
         <Intro />
         <About />
         <Contact />
       </div>
+
       <ScrollToTop />
     </div>
   );
