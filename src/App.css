@@ -107,4 +107,11 @@ code {
     right: 0 !important;
     padding: 4px;
   }
+
+  .padding-between {
+    padding-top: 180%;
+  }
+  .padding-between2 {
+    padding-top: 10%;
+  }
 }

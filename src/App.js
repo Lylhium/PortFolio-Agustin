@@ -41,9 +41,10 @@ function App() {
             <DropDown />
           </div>
         </div>
-
         <Intro />
+        <div className="padding-between2" />
         <About />
+        <div className="padding-between" />
         <Contact />
       </div>
 
