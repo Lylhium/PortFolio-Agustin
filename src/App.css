@@ -33,15 +33,18 @@ code {
   border: none;
   transition: all 0.5s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .dropbtn.dropdown:hover {
   background-color: rgb(43, 43, 43);
   border: 0.1em solid #74e295;
   color: #74e295;
+  font-weight: 500;
 }
 
 .dropdwn {
+  font-weight: 500;
   display: inline;
   position: fixed;
   top: 0 !important;

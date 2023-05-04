@@ -13,9 +13,9 @@ const DropDown = () => {
   };
 
   return (
-    <div class="dropdown">
-      <button class="dropbtn">{t("langu")}</button>
-      <div class="dropdown-content">
+    <div className="dropdown">
+      <button className="dropbtn">{t("langu")}</button>
+      <div className="dropdown-content">
         <button onClick={() => changeLanguage("en")}>{t("langu1")}</button>
         <button onClick={() => changeLanguage("es")}>{t("langu2")}</button>
       </div>

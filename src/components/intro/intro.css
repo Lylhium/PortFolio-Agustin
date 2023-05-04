@@ -82,6 +82,14 @@
   padding-top: 15px;
   font-weight: 500;
 }
+.i-desc1 {
+  padding-top: 15px;
+  font-weight: 500;
+}
+.i-desc2 {
+  padding-top: 10px;
+  font-weight: 500;
+}
 
 div.a {
   padding-top: 0;
@@ -94,7 +102,12 @@ div.a {
   }
 
   .i-desc {
-    padding-top: 10px;
+    padding-top: 15px;
+    font-weight: 500;
+  }
+  .i-desc2 {
+    padding-bottom: 15px;
+    font-weight: 500;
   }
   .i-left-wrapper {
     align-items: center;
@@ -104,12 +117,17 @@ div.a {
   }
 
   .i-img {
-    border-radius: 40%; /* Establece un radio del 50% para crear un círculo */
-    width: 95%;
+    padding-top: 5px;
+    border-radius: 50%; /* Establece un radio del 50% para crear un círculo */
+    width: 94%;
     height: 400px;
     object-fit: cover;
     position: absolute;
     padding-left: 12px;
+  }
+
+  .i-bg {
+    display: none;
   }
 }
 

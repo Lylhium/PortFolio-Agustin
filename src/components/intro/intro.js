@@ -25,8 +25,8 @@ export default function intro() {
               <div className="i-title-item">HTML & CSS</div>
             </div>
           </div>
-          <div className="i-desc">{t("intro1")}</div>
-          <div className="i-desc">{t("intro2")}</div>
+          <div className="i-desc1">{t("intro1")}</div>
+          <div className="i-desc2">{t("intro2")}</div>
         </div>
       </div>
       <div className="i-right">

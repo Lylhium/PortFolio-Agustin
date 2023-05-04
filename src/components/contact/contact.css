@@ -12,6 +12,7 @@
 
 .c-right {
   flex: 1;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +28,7 @@
   display: flex;
   align-items: center;
   margin: 50px 0px;
-  font-weight: 300;
+  font-weight: 500;
   width: 70%;
 }
 .c-icon {
@@ -37,7 +38,7 @@
 }
 
 .c-desc {
-  font-weight: 200;
+  font-weight: 500;
 }
 .c-texto {
   text-align: center;
@@ -59,6 +60,7 @@ input {
 }
 
 textarea {
+  font-weight: 500;
   width: 100%;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -76,11 +78,13 @@ textarea {
   border-radius: 100px;
   text-decoration: none;
   transition: all 0.2s;
+  font-weight: 500;
 }
 .btn-send:hover {
   background-color: rgb(43, 43, 43);
   border: 0.1em solid #74e295;
   color: #74e295;
+  font-weight: 500;
 }
 .c-contact {
   background-image: linear-gradient(#74e295, #74e295);
@@ -98,6 +102,9 @@ textarea {
 .layer1 {
   background-image: url("../../assets/Waves.svg");
 }
+.btn-send {
+  font-weight: 500;
+}
 
 @media screen and (max-width: 480px) {
   .c {
@@ -108,6 +115,7 @@ textarea {
   }
 
   .c-title {
+    font-weight: 500;
     font-size: 30px;
   }
 

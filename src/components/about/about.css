@@ -4,6 +4,9 @@
   align-items: center;
 }
 
+.a-desc {
+  font-weight: 500;
+}
 .a-left {
   flex: 1;
   display: flex;
@@ -59,12 +62,17 @@ h1 {
 }
 
 .a-desc {
-  font-weight: 300;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 480px) {
   .a-card {
-    height: 31vh;
+    padding-top: 15px;
+    width: 85%;
+    height: 30vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
   }
   .a-card.bg {
     display: none;
@@ -72,7 +80,6 @@ h1 {
   .a {
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
     padding-bottom: 85%;
   }
 
@@ -107,6 +114,7 @@ h1 {
   text-decoration: none;
   transition: all 0.2s;
   padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 a.button1:hover {
