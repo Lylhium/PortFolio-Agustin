@@ -110,6 +110,11 @@ textarea {
   .c {
     padding-top: 20px;
   }
+
+  .pad-top {
+    padding-top: 140%;
+  }
+
   .c-wrapper {
     flex-direction: column;
   }

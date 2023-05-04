@@ -89,6 +89,7 @@ const Contact = () => {
 
   return (
     <div className="c">
+      <div className="pad-top"></div>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">

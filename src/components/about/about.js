@@ -4,6 +4,7 @@ import "../about/about.css";
 //img
 import me2 from "../../../src/assets/pulg.jpg";
 import Logo from "../../assets/Logo.png";
+import RainIcon from "../../assets/cloud_rain.png";
 //translate
 import { useTranslation } from "react-i18next";
 
@@ -37,6 +38,18 @@ const about = () => {
         >
           <img src={Logo} className="coco-icon" alt="img" />
           Coco Light
+        </a>
+        <br />
+        <br />
+        <a
+          className="button1"
+          href={"https://lylhium.github.io/Weather-App/"}
+          target="_blank"
+          rel="noreferrer"
+          style={{ fontWeight: 500, fontSize: 25 }}
+        >
+          <img src={RainIcon} className="coco-icon" alt="img" />
+          Lilius Weather
         </a>
         <br />
       </div>
