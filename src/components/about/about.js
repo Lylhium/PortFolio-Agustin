@@ -14,7 +14,6 @@ const about = () => {
 
   return (
     <div className="a">
-      <div className="top-pad"></div>
       <div className="a-left">
         <div className="a-card bg"> </div>
         <div className="a-card">
