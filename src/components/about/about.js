@@ -2,7 +2,7 @@ import React from "react";
 //css
 import "../about/about.css";
 //img
-import me2 from "../../../src/assets/pulg.jpg";
+import me2 from "../../../src/assets/yo-pic.jpg";
 import Logo from "../../assets/Logo.png";
 import RainIcon from "../../assets/cloud_rain.png";
 //translate
@@ -14,6 +14,7 @@ const about = () => {
 
   return (
     <div className="a">
+      <div className="top-pad"></div>
       <div className="a-left">
         <div className="a-card bg"> </div>
         <div className="a-card">

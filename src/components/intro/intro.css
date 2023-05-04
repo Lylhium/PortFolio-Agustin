@@ -117,13 +117,12 @@ div.a {
   }
 
   .i-img {
-    padding-top: 5px;
     border-radius: 50%; /* Establece un radio del 50% para crear un círculo */
-    width: 94%;
-    height: 400px;
-    object-fit: cover;
-    position: absolute;
-    padding-left: 12px;
+    padding-left: 23px;
+    padding-right: 20px;
+    width: 89%;
+    height: 71%;
+    position: relative;
   }
 
   .i-bg {
