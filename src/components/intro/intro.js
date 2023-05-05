@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
 //css
 import "./intro.css";
@@ -5,7 +6,8 @@ import "./intro.css";
 import Me from "../../../src/assets/yo2023.jpg";
 //translate
 import { useTranslation } from "react-i18next";
-
+//CV
+import CV from "../../assets/CV_Agustin2023.pdf";
 export default function intro() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { t } = useTranslation();
@@ -27,6 +29,17 @@ export default function intro() {
           </div>
           <div className="i-desc1">{t("intro1")}</div>
           <div className="i-desc2">{t("intro2")}</div>
+          <br />
+          <a
+            className="button"
+            href={CV}
+            download="Agustin_CV"
+            target="_blank"
+            rel="noreferrer"
+            style={{ fontWeight: 500, textAlign: "center" }}
+          >
+            {t("cv")}
+          </a>
         </div>
       </div>
       <div className="i-right">

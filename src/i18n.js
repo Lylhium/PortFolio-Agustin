@@ -29,6 +29,7 @@ i18n.use(initReactI18next).init({
         contact2: "send me an email here!",
         btnSend: "Send",
         inputError: "Please complete all fields.",
+        cv: "Download CV",
       },
     },
     es: {
@@ -56,6 +57,7 @@ i18n.use(initReactI18next).init({
         contact2: "envíame un email aquí!",
         btnSend: "Enviar",
         inputError: "Porfavor complete todos los campos.",
+        cv: "Descargar CV",
       },
     },
   },
