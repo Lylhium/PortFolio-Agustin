@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/PortFolio-Agustin/static/css/main.87e39604.css",
-    "main.js": "/PortFolio-Agustin/static/js/main.641034e7.js",
+    "main.js": "/PortFolio-Agustin/static/js/main.b35fe2cc.js",
     "static/js/787.5afd0f6b.chunk.js": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js",
     "static/media/yo2023.jpg": "/PortFolio-Agustin/static/media/yo2023.c219e7f83b7179c0fb68.jpg",
+    "static/media/CV_Agustin2023.pdf": "/PortFolio-Agustin/static/media/CV_Agustin2023.e966879e3a494a095e00.pdf",
     "static/media/yo-pic.jpg": "/PortFolio-Agustin/static/media/yo-pic.f2b84b48482577df26ee.jpg",
     "static/media/github.png": "/PortFolio-Agustin/static/media/github.9fa9dfec63bfd586295b.png",
     "static/media/address.png": "/PortFolio-Agustin/static/media/address.a01cb8cc428702f30bec.png",
@@ -14,11 +15,11 @@
     "static/media/Waves.svg": "/PortFolio-Agustin/static/media/Waves.de5881dcff8ea60690e0.svg",
     "index.html": "/PortFolio-Agustin/index.html",
     "main.87e39604.css.map": "/PortFolio-Agustin/static/css/main.87e39604.css.map",
-    "main.641034e7.js.map": "/PortFolio-Agustin/static/js/main.641034e7.js.map",
+    "main.b35fe2cc.js.map": "/PortFolio-Agustin/static/js/main.b35fe2cc.js.map",
     "787.5afd0f6b.chunk.js.map": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87e39604.css",
-    "static/js/main.641034e7.js"
+    "static/js/main.b35fe2cc.js"
   ]
 }
