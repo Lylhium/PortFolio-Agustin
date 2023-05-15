@@ -37,7 +37,7 @@ const about = () => {
           style={{ fontWeight: 500, fontSize: 25 }}
         >
           <img src={Logo} className="coco-icon" alt="img" />
-          Coco Light
+          E-commerce
         </a>
         <br />
         <br />
@@ -49,7 +49,7 @@ const about = () => {
           style={{ fontWeight: 500, fontSize: 25 }}
         >
           <img src={RainIcon} className="coco-icon" alt="img" />
-          Lilius Weather
+          Weather App
         </a>
         <br />
       </div>
