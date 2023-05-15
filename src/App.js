@@ -10,6 +10,7 @@ import Contact from "./components/contact/contact";
 import Intro from "./components/intro/intro";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import DropDown from "./components/DropDown/dropDown";
+import LanguageList from "./components/languageList/languageList";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -42,6 +43,7 @@ function App() {
           </div>
         </div>
         <Intro />
+        <LanguageList />
         <div className="padding-between2" />
         <About />
         <div className="padding-between" />
