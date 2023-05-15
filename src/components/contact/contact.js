@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 //css
 import "../contact/contact.css";
-//img
-import Phone from "../../assets/phone.png";
-import Email from "../../assets/email.png";
-import Address from "../../assets/address.png";
-import Linkedin from "../../assets/linkedin.png";
-import Github from "../../assets/github.png";
 //emailJS
 import emailjs from "emailjs-com";
 //sweetalert
 import Swal from "sweetalert2";
 //translate
 import { useTranslation } from "react-i18next";
+//icons
+import {
+  FaGithub,
+  FaLinkedin,
+  FaMailBulk,
+  FaMap,
+  FaPhone,
+} from "react-icons/fa";
 
 const Contact = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -95,15 +97,15 @@ const Contact = () => {
           <h1 className="c-title">{t("contact")}</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} className="c-icon" alt="img" />
+              <FaPhone className="c-icon" />
               +(54) 9 11 7360-7075
             </div>
             <div className="c-info-item">
-              <img src={Email} className="c-icon" alt="img" />
+              <FaMailBulk className="c-icon" />
               Agustinpfarherr@gmail.com
             </div>
             <div className="c-info-item">
-              <img src={Linkedin} className="c-icon" alt="img" />
+              <FaLinkedin className="c-icon" />
               <a
                 href={
                   "https://www.linkedin.com/in/agust%C3%ADn-pfarherr-623188211/"
@@ -116,7 +118,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="c-info-item">
-              <img src={Github} className="c-icon" alt="img" />
+              <FaGithub className="c-icon" />
               <a
                 href={"https://github.com/Lylhium"}
                 className="button"
@@ -127,7 +129,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="c-info-item">
-              <img src={Address} className="c-icon" alt="img" />
+              <FaMap className="c-icon" />
               <a
                 href={"https://goo.gl/maps/vcbZic1LcaeCpi9y8"}
                 className="button"
