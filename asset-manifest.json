@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/PortFolio-Agustin/static/css/main.b9644864.css",
-    "main.js": "/PortFolio-Agustin/static/js/main.acdd33b9.js",
+    "main.css": "/PortFolio-Agustin/static/css/main.24e2c6fd.css",
+    "main.js": "/PortFolio-Agustin/static/js/main.f19008c9.js",
     "static/js/787.5afd0f6b.chunk.js": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js",
     "static/media/yo2023.jpg": "/PortFolio-Agustin/static/media/yo2023.c219e7f83b7179c0fb68.jpg",
     "static/media/CV_Agustin2023.pdf": "/PortFolio-Agustin/static/media/CV_Agustin2023.e966879e3a494a095e00.pdf",
     "static/media/yo-pic.jpg": "/PortFolio-Agustin/static/media/yo-pic.f2b84b48482577df26ee.jpg",
     "static/media/cloud_rain.png": "/PortFolio-Agustin/static/media/cloud_rain.cf9f368e4bdf978160b8.png",
     "static/media/Logo.png": "/PortFolio-Agustin/static/media/Logo.0d426996a2b70d8111f9.png",
-    "static/media/Waves.svg": "/PortFolio-Agustin/static/media/Waves.de5881dcff8ea60690e0.svg",
+    "static/media/Waves.svg": "/PortFolio-Agustin/static/media/Waves.d5d91a03dc2ecc90631b.svg",
     "index.html": "/PortFolio-Agustin/index.html",
-    "main.b9644864.css.map": "/PortFolio-Agustin/static/css/main.b9644864.css.map",
-    "main.acdd33b9.js.map": "/PortFolio-Agustin/static/js/main.acdd33b9.js.map",
+    "main.24e2c6fd.css.map": "/PortFolio-Agustin/static/css/main.24e2c6fd.css.map",
+    "main.f19008c9.js.map": "/PortFolio-Agustin/static/js/main.f19008c9.js.map",
     "787.5afd0f6b.chunk.js.map": "/PortFolio-Agustin/static/js/787.5afd0f6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9644864.css",
-    "static/js/main.acdd33b9.js"
+    "static/css/main.24e2c6fd.css",
+    "static/js/main.f19008c9.js"
   ]
 }
