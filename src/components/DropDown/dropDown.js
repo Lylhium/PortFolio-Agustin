@@ -1,4 +1,5 @@
 import React from "react";
+import { FiGlobe } from "react-icons/fi"; // Importamos el icono de mundo de react-icons
 //translate
 import i18n from "../../i18n";
 import "../../App.css";
@@ -13,9 +14,12 @@ const DropDown = () => {
   };
 
   return (
-    <div className="dropdown">
-      <button className="dropbtn">{t("langu")}</button>
-      <div className="dropdown-content">
+    <div className='dropdown'>
+      {/* Icono de mundo de react-icons */}
+      <button className='dropbtn' onClick={() => console.log("clicked")}>
+        <FiGlobe size={20} />
+      </button>
+      <div className='dropdown-content'>
         <button onClick={() => changeLanguage("en")}>{t("langu1")}</button>
         <button onClick={() => changeLanguage("es")}>{t("langu2")}</button>
       </div>

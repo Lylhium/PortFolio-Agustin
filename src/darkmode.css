@@ -20,11 +20,11 @@
 
 .switch-container {
   position: sticky;
-  position: -webkit-sticky; /* Agrega esta propiedad para compatibilidad con navegadores antiguos */
+  position: -webkit-sticky;
   top: 0;
   left: 0;
   z-index: 999;
-  padding: 15px;
+  padding: 10px;
   background-color: var(--light-mode-bg-color);
   transition: background-color var(--transition-duration);
 }

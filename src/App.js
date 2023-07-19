@@ -1,10 +1,7 @@
-//react
 import { useState, useEffect } from "react";
 import Switch from "react-switch";
-//css
 import "../src/App.css";
 import "./darkmode.css";
-//components
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Intro from "./components/intro/intro";
@@ -24,7 +21,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div className="App">
+    <div className='App'>
       <div
         style={{
           backgroundColor: `var(--bg-color)`,
@@ -32,21 +29,33 @@ function App() {
         }}
       >
         <div className={`switch-container ${isDarkMode ? "dark-mode" : ""}`}>
-          <Switch
-            checked={isDarkMode}
-            onChange={() => setIsDarkMode(!isDarkMode)}
-            onColor="#74e295"
-            offColor="#555555;"
-          />
-          <div className="dropdwn">
-            <DropDown />
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between", // Alineamos los elementos a la derecha
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <h3>agustín</h3>
+              <h3 className='logo'>.dev</h3>
+            </div>
+            <div className='dropdwn'>
+              <DropDown />
+            </div>
+            <Switch
+              checked={isDarkMode}
+              onChange={() => setIsDarkMode(!isDarkMode)}
+              onColor='#74e295'
+              offColor='#555555;'
+            />
           </div>
         </div>
         <Intro />
         <LanguageList />
-        <div className="padding-between2" />
+        <div className='padding-between2' />
         <About />
-        <div className="padding-between" />
+        <div className='padding-between' />
         <Contact />
       </div>
 

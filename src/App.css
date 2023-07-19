@@ -23,6 +23,14 @@ code {
     monospace;
 }
 
+.logo {
+  color: #62e087;
+}
+.dropdown {
+  display: flex; /* Cambiamos a flex para alinear horizontalmente los elementos */
+  align-items: center; /* Alineamos verticalmente los elementos */
+  margin-right: 80px; /* Agregamos un margen derecho para separar los elementos */
+}
 /* Estilos para el botón */
 .dropbtn {
   background-color: #74e295;
