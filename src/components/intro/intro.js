@@ -20,11 +20,11 @@ export default function intro() {
           <div className='i-name'>Agustín Pfarherr</div>
           <div className='i-title'>
             <div className='i-title-wrapper'>
-              <div className='i-title-item'>Front-end Developer</div>
-              <div className='i-title-item'>React JS</div>
+              <div className='i-title-item'>Full-Stack Developer</div>
+              <div className='i-title-item'>React JS & Next.Js</div>
               <div className='i-title-item'>React Native</div>
               <div className='i-title-item'>JavaScript & TypeScript</div>
-              <div className='i-title-item'>HTML & CSS</div>
+              <div className='i-title-item'>Node.js & Express</div>
             </div>
           </div>
           <div className='i-desc1'>{t("intro1")}</div>
