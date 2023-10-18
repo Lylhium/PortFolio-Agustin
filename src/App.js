@@ -33,7 +33,7 @@ function App() {
             style={{
               display: "flex",
               alignItems: "center",
-              justifyContent: "space-between", // Alineamos los elementos a la derecha
+              justifyContent: "space-between",
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
