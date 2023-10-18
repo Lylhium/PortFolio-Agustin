@@ -20,7 +20,7 @@ export default function intro() {
           <div className='i-name'>Agustín Pfarherr</div>
           <div className='i-title'>
             <div className='i-title-wrapper'>
-              <div className='i-title-item'>Full-Stack Developer</div>
+              <div className='i-title-item'>Full-Stack developer</div>
               <div className='i-title-item'>React JS & Next.Js</div>
               <div className='i-title-item'>React Native</div>
               <div className='i-title-item'>JavaScript & TypeScript</div>
