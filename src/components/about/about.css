@@ -71,10 +71,8 @@ h1 {
 
   .a-card {
     width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
+    height: auto;
+    z-index: 1;
   }
   .a-card.bg {
     display: none;
@@ -86,18 +84,21 @@ h1 {
 
   .a-left {
     width: 100%;
-    padding-top: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .a-right {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
   }
   .a-img {
-    border-radius: 10%; /* Establece un radio del 50% para crear un círculo */
-    width: 80%;
-    height: 80%;
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
   }
 }
 .coco-icon {
@@ -124,4 +125,15 @@ a.button1:hover {
   background-color: rgb(43, 43, 43);
   border: 0.1em solid #74e295;
   color: #74e295;
+}
+
+@media screen and (max-width: 375px) {
+  .a-card {
+    width: 90%;
+    height: auto;
+    z-index: 1;
+  }
+  .a-card.bg {
+    display: none;
+  }
 }

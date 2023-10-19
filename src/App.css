@@ -117,9 +117,20 @@ code {
   }
 
   .padding-between {
-    padding-top: 180%;
+    padding-top: 50%;
   }
-  .padding-between2 {
-    padding-top: 25%;
+}
+
+@media screen and (max-width: 375px) {
+  .dropdwn {
+    display: inline;
+    position: fixed;
+    top: 0 !important;
+    right: 0 !important;
+    padding: 5px;
+  }
+
+  .padding-between {
+    padding-top: 100%;
   }
 }

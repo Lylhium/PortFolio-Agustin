@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 //css
 import "../contact/contact.css";
+import "../about/about.css";
+
 //emailJS
 import emailjs from "emailjs-com";
 //sweetalert
@@ -90,103 +92,103 @@ const Contact = () => {
   }
 
   return (
-    <div className="c">
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
-          <h1 className="c-title">{t("contact")}</h1>
-          <div className="c-info">
-            <div className="c-info-item">
-              <FaPhone className="c-icon" />
+    <div className='c'>
+      <div className='c-bg'></div>
+      <div className='c-wrapper'>
+        <div className='c-left'>
+          <h1 className='c-title'>{t("contact")}</h1>
+          <div className='c-info'>
+            <div className='c-info-item'>
+              <FaPhone className='c-icon' />
               +(54) 9 11 7360-7075
             </div>
-            <div className="c-info-item">
-              <FaMailBulk className="c-icon" />
+            <div className='c-info-item'>
+              <FaMailBulk className='c-icon' />
               Agustinpfarherr@gmail.com
             </div>
-            <div className="c-info-item">
-              <FaLinkedin className="c-icon" />
+            <div className='c-info-item'>
+              <FaLinkedin className='c-icon' />
               <a
                 href={
                   "https://www.linkedin.com/in/agust%C3%ADn-pfarherr-623188211/"
                 }
-                className="button"
-                target="_blank"
-                rel="noreferrer"
+                className='button'
+                target='_blank'
+                rel='noreferrer'
               >
                 Linkedin
               </a>
             </div>
-            <div className="c-info-item">
-              <FaGithub className="c-icon" />
+            <div className='c-info-item'>
+              <FaGithub className='c-icon' />
               <a
                 href={"https://github.com/Lylhium"}
-                className="button"
-                target="_blank"
-                rel="noreferrer"
+                className='button'
+                target='_blank'
+                rel='noreferrer'
               >
                 GitHub
               </a>
             </div>
-            <div className="c-info-item">
-              <FaMap className="c-icon" />
+            <div className='c-info-item'>
+              <FaMap className='c-icon' />
               <a
                 href={"https://goo.gl/maps/vcbZic1LcaeCpi9y8"}
-                className="button"
-                target="_blank"
-                rel="noreferrer"
-                color="white"
+                className='button'
+                target='_blank'
+                rel='noreferrer'
+                color='white'
               >
                 Villa Crespo, Capital Federal , Argentina
               </a>
             </div>
           </div>
         </div>
-        <div className="c-right">
-          <p className="c-desc">
-            <h2 className="c-contact">{t("contact1")}</h2>
-            <p className="c-texto">{t("contact2")}</p>
+        <div className='c-right'>
+          <p className='c-desc'>
+            <h2 className='c-contact'>{t("contact1")}</h2>
+            <p className='c-texto'>{t("contact2")}</p>
           </p>
           <form onSubmit={sendEmail}>
             <input
-              type="text"
-              name="name"
-              placeholder="Name"
+              type='text'
+              name='name'
+              placeholder='Name'
               value={name}
               onChange={handleInputChange}
             />
             <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
+              type='text'
+              name='subject'
+              placeholder='Subject'
               value={subject}
               onChange={handleInputChange}
             />
             <input
-              type="email"
-              name="email"
-              placeholder="Email"
+              type='email'
+              name='email'
+              placeholder='Email'
               value={email}
               onChange={handleInputChange}
             />
             <br></br>
             <textarea
-              className="textarea-style"
-              name="message"
+              className='textarea-style'
+              name='message'
               rows={4}
               value={message}
-              placeholder="Message"
+              placeholder='Message'
               onChange={handleInputChange}
             />
 
             {error && <div style={{ color: "red" }}>{error}</div>}
-            <button className="btn-send" type="submit">
+            <button className='btn-send' type='submit'>
               {t("btnSend")}
             </button>
           </form>
         </div>
       </div>
-      <div className="spacer layer1"></div>
+      <div className='spacer layer1'></div>
     </div>
   );
 };

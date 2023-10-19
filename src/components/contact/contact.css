@@ -121,13 +121,12 @@ textarea {
   }
 
   .c-title {
-    font-weight: 500;
-    font-size: 30px;
+    font-size: 30px; /* Reduce el tamaño del título en la versión móvil */
+    text-align: center; /* Centra el título */
   }
-
   .c-info-item {
-    margin: 20px 0px;
-    width: 100%;
+    margin: 20px 0; /* Ajusta el espaciado entre elementos */
+    width: 100%; /* Ocupa todo el ancho disponible */
   }
 
   .c-desc {

@@ -1,6 +1,7 @@
 import React from "react";
 //css
 import "../about/about.css";
+import "../contact/contact.css";
 //img
 import me2 from "../../../src/assets/yo-pic.jpg";
 import Logo from "../../assets/Logo.png";
@@ -56,9 +57,7 @@ const about = () => {
         <br />
         <a
           className='button1'
-          href={
-            "https://movies-proyect-sotelius-utcx-14xeqoc3x-lylhium.vercel.app/"
-          }
+          href={"https://movies-proyect-sotelius-utcx.vercel.app"}
           target='_blank'
           rel='noreferrer'
           style={{ fontWeight: 500, fontSize: 25 }}
